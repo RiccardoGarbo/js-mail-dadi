@@ -17,28 +17,26 @@ const resultGame = document.getElementById('result-game')
 const players = ['playerOne', 'playerTwo']
 
 //Do un valore al primo elemento della variabile players
-players[0] = Math.floor(Math.random() * 6) + 1 + ' Player One'
+players[0] = Math.floor(Math.random() * 6) + 1
 
 //Do un valore al secondo elemento della variabile players
-players[1] = Math.floor(Math.random() * 6) + 1 + ' Player Two'
+players[1] = Math.floor(Math.random() * 6) + 1
 
 //Creo una variabile result a cui do inizialmente il valore di 'Pareggio'
-let result = 'Pareggio'
+let result = 'PAREGGIO'
 
 //Decido il nuovo valore di result in base ai criteri che impongo
 if (players[0] > players[1]) {
-    result =
-        'Player 1 WIN'
+    result = 'Player 1 WIN'
 }
 else if (players[0] < players[1]) {
-    result =
-        'Player 2 WIN'
+    result = 'Player 2 WIN'
 }
+
 
 //Importo il tutto nella pagina HTML
 trowDice.innerHTML = players
 resultGame.innerHTML = result
-console.log(trowDice)
 
 
 
