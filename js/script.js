@@ -1,3 +1,7 @@
+
+
+//-----------ESERCIZIO DADI-------------
+
 /*
 
 -1 Importo dal file HTML gli elementi che potrebbero servirmi 
@@ -34,11 +38,42 @@ else if (players[0] < players[1]) {
 }
 
 
+
 //Importo il tutto nella pagina HTML
 trowDice.innerHTML = players
 resultGame.innerHTML = result
 
 
+
+//------ESERCIZIO EMAIL-------
+
+/*
+-1 Creo una variabile array con le email "autorizzate"
+-2 Importo dal file html tutte gli elementi che necessito e ci faccio delle variabili
+-3 Creo un button interattio dove al click mi effettua le operazioni i verifica
+-4 Se la mail che l'utente scrive è tra le presenti nelle "autorizzate" allora apparirà un messaggio di successo, altrimenti apparirà un popup che dirà che la mail non è autorizzata.
+
+*/
+// Creo la variabile con le mail autorizzate
+const emailAuthorized = ['rg94@gmail.com',
+    'classe116@gmail.com',
+    'stoimpazzendo@gmail.com']
+// importo i vari elementi dall'HTML
+const button = document.getElementById('button')
+const email = document.getElementById('email')
+const success = document.querySelector('.alert')
+// Creo il button interrattivo con le operazioni di verifica
+button.addEventListener('click', function () {
+    const emailValue = email.value
+    if (emailValue !== emailAuthorized[0] && emailValue !== emailAuthorized[1] && emailValue !== emailAuthorized[2]) {
+        alert('Email non autorizzata');
+        return;
+    }
+    else {
+        success.classList.remove('d-none')
+        return;
+    }
+})
 
 
 

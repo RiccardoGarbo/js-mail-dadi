@@ -5,14 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--BOOTSTRAP-->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css'
+        integrity='sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=='
+        crossorigin='anonymous' />
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--JS-->
     <script defer src="js/script.js"></script>
 </head>
 
 <body>
-    <h1>Gioco dei dadi</h1>
+
+    <!--DADI-->
+
+    <h1 class="title-dice">Gioco dei dadi</h1>
     <div id="dice">
         <h2 id="trowdice"></h2>
         <h1 id="result-game"></h1>
+    </div>
+    <hr>
+    <!--EMAIL-->
+
+    <h1 class="fake-login">
+        Fake Login
+    </h1>
+    <form class="container">
+        <div class="mb-3">
+            <input type="email" class="form-control" id="email">
+        </div>
+        <button id="button" type="button" class="btn btn-primary">Submit</button>
+    </form>
+    <div class="alert alert-success d-none" role="alert">
+        Email autorizzata!
     </div>
 
 </body>
